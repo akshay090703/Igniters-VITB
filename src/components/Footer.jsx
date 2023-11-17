@@ -1,6 +1,14 @@
 import React, { useState } from "react";
 import classes from "./Footer.module.css";
-import { FaDiscord, FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
+import {
+  FaDiscord,
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin,
+  FaPhone,
+  FaYoutube,
+} from "react-icons/fa";
+import { TfiEmail } from "react-icons/tfi";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -20,7 +28,7 @@ const Footer = () => {
         <div className={classes.row}>
           <div className={classes["footer-col"]}>
             <img src="./logo.svg" alt="logo" className="logo" />
-            <h2>D2C Igniters</h2>
+            <h2>Igniters</h2>
           </div>
           <div className={classes["footer-col"]}>
             <h4>explore</h4>
@@ -52,33 +60,43 @@ const Footer = () => {
           <div className={classes["footer-col"]}>
             <h4>follow us</h4>
             <div className="social-links">
-              <a to="/">
-                <FaFacebook className={classes["social-media-icons"]} />
+              <a
+                href="https://www.instagram.com/d2cignitersclub_vitb"
+                target="_blank"
+              >
+                <FaInstagram className={classes["social-media-icons"]} />
               </a>
-              <a to="/">
-                <FaTwitter className={classes["social-media-icons"]} />
-              </a>
-              <a to="/">
+              <a href="https://discord.gg/3XgShchhhm" target="_blank">
                 <FaDiscord className={classes["social-media-icons"]} />
               </a>
-              <a to="/">
+              <a
+                href="https://www.linkedin.com/company/d2cignitersclub-vitbhopal/mycompany/"
+                target="_blank"
+              >
                 <FaLinkedin className={classes["social-media-icons"]} />
+              </a>
+              <a
+                href="https://www.youtube.com/@D2CIgnitersVITBhopal"
+                target="_blank"
+              >
+                <FaYoutube className={classes["social-media-icons"]} />
               </a>
             </div>
             <h4>Contact Us</h4>
-            <div>
-              <form onSubmit={handleSubmit}>
-                <input
-                  type="text"
-                  placeholder="Enter your message"
-                  value={message}
-                  onChange={(e) => setMessage(e.target.value)}
-                  className={classes.inputField}
-                />
-                <button type="submit" className={classes.submitButton}>
-                  Submit
-                </button>
-              </form>
+            <div className={classes["footer-contact"]}>
+              <p>
+                <span>
+                  <TfiEmail className={classes.emailIcon} />
+                </span>
+                <span> d2cigniters@</span>
+                <p>vitbhopal.ac.in</p>
+              </p>
+              <p>
+                <span>
+                  <FaPhone />
+                </span>
+                <span> XXXXXXXXXX</span>
+              </p>
             </div>
           </div>
         </div>
@@ -86,7 +104,7 @@ const Footer = () => {
       <div className={classes["footer-bottom"]}>
         <p>
           Copyright &copy; {}
-          <a to="/">D2C Igniters 2023</a>{" "}
+          <a to="/">Igniters 2023</a>{" "}
         </p>
       </div>
     </footer>

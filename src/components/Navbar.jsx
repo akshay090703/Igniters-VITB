@@ -11,7 +11,7 @@ const Navbar = () => {
       <Link to="/">
         <div className={classes.title}>
           <img src="./logo.svg" alt="logo" className={classes.logoImg} />
-          <p className={classes["logo-text"]}>D2C Igniters</p>
+          <p className={classes["logo-text"]}>Igniters Club</p>
         </div>
       </Link>
       <div className={classes.menu} onClick={() => setMenuOpen(!menuOpen)}>
