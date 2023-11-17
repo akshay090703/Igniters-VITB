@@ -21,7 +21,7 @@ const Navbar = () => {
       </div>
       <ul className={menuOpen ? classes.open : ""}>
         <li>
-          <NavLink to="/home">Home</NavLink>
+          <NavLink to="/">Home</NavLink>
         </li>
         <li>
           <NavLink to="/events">Events</NavLink>
@@ -33,7 +33,7 @@ const Navbar = () => {
           <NavLink to="/blogs">Blogs</NavLink>
         </li>
         <li>
-          <NavLink to="/contact">Connect</NavLink>
+          <NavLink to="/about">About</NavLink>
         </li>
       </ul>
 

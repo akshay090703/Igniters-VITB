@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import classes from "./Footer.module.css";
 import { FaDiscord, FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const [message, setMessage] = useState("");
@@ -14,53 +15,53 @@ const Footer = () => {
   };
 
   return (
-    <footer class={classes.footer}>
-      <div class={classes.container}>
-        <div class={classes.row}>
-          <div class={classes["footer-col"]}>
+    <footer className={classes.footer}>
+      <div className={classes.container}>
+        <div className={classes.row}>
+          <div className={classes["footer-col"]}>
             <img src="./logo.svg" alt="logo" className="logo" />
             <h2>D2C Igniters</h2>
           </div>
-          <div class={classes["footer-col"]}>
+          <div className={classes["footer-col"]}>
             <h4>explore</h4>
             <ul>
               <li>
-                <a href="#">Home</a>
+                <Link to="/">Home</Link>
               </li>
               <li>
-                <a href="#">teams</a>
+                <Link to="/events">events</Link>
               </li>
               <li>
-                <a href="#">events</a>
+                <Link to="/teams">teams</Link>
               </li>
               <li>
-                <a href="#">blogs</a>
+                <Link to="/blogs">blogs</Link>
               </li>
               <li>
-                <a href="#">contact</a>
+                <Link to="/about">about</Link>
               </li>
             </ul>
           </div>
-          <div class={classes["footer-col"]}>
+          <div className={classes["footer-col"]}>
             <h4>visit</h4>
             <p>VIT Bhopal University</p>
             <p>Bhopal-Indore Highway</p>
             <p>Kothri Kalan, Sehore</p>
             <p>Madhya Pradesh - 466114</p>
           </div>
-          <div class={classes["footer-col"]}>
+          <div className={classes["footer-col"]}>
             <h4>follow us</h4>
-            <div class="social-links">
-              <a href="#">
+            <div className="social-links">
+              <a to="/">
                 <FaFacebook className={classes["social-media-icons"]} />
               </a>
-              <a href="#">
+              <a to="/">
                 <FaTwitter className={classes["social-media-icons"]} />
               </a>
-              <a href="#">
+              <a to="/">
                 <FaDiscord className={classes["social-media-icons"]} />
               </a>
-              <a href="#">
+              <a to="/">
                 <FaLinkedin className={classes["social-media-icons"]} />
               </a>
             </div>
@@ -85,7 +86,7 @@ const Footer = () => {
       <div className={classes["footer-bottom"]}>
         <p>
           Copyright &copy; {}
-          <a href="#">D2C Igniters 2023</a>{" "}
+          <a to="/">D2C Igniters 2023</a>{" "}
         </p>
       </div>
     </footer>
