@@ -57,6 +57,10 @@
   visibility: visible;
 }
 
+.current .content a {
+  text-decoration: none;
+}
+
 .--btn {
   font-size: 1.6rem;
   font-weight: 400;

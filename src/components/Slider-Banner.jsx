@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 import { sliderData } from "../slider-data";
 import classes from "./Slider-Banner.module.css";
+import { Link } from "react-router-dom";
 
 const Slider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -67,11 +68,13 @@ const Slider = () => {
                   <h2>{slide.heading}</h2>
                   <p>{slide.desc}</p>
                   <hr />
-                  <button
-                    className={`${classes["--btn"]} ${classes["--btn-primary"]}`}
-                  >
-                    All Events
-                  </button>
+                  <Link to="/events">
+                    <button
+                      className={`${classes["--btn"]} ${classes["--btn-primary"]}`}
+                    >
+                      All Events
+                    </button>
+                  </Link>
                 </div>
               </div>
             )}
