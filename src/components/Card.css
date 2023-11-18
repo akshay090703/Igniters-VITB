@@ -1,0 +1,51 @@
+.card {
+    display: flex;
+    background-color: #f5f4f9;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 6px 12px #e91e63;
+    border-radius: 30px;
+    position: relative;
+   }
+   
+   .card:hover{
+    background-color: rgb(103, 80, 218);
+    color: #f5f4f9;
+   }
+  
+   .card img {
+    width: 70%;
+    height: auto;
+    border: 10px solid #f8578d; 
+    border-radius: 50%;
+    object-fit:contain;
+   }
+   
+   .card h3 {
+    margin: 10px 0;
+   }
+   
+   .card__social {
+    display: flex;
+    justify-content:center;
+    width: 100%;
+    margin-top: 10px;
+   }
+   
+   .card__social a {
+    display: inline-block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+   }
+   
+  
+   .card__social img {
+    width: 54px;
+    height: 54px;
+    border-radius: 0%;
+    border:none;
+   }
