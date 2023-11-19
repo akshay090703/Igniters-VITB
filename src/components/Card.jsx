@@ -1,29 +1,29 @@
-import React from 'react';
-import './Card.css';
+import React from "react";
+import classes from "./Card.module.css";
 
 const ColoredLine = ({ color }) => (
   <hr
-      style={{
-          color: color,
-          marginTop: 10,
-          backgroundColor: color,
-          height: 5
-      }}
+    style={{
+      color: color,
+      marginTop: 10,
+      backgroundColor: color,
+      height: 5,
+    }}
   />
 );
 const Card = ({ teamMember }) => {
- const { name, title, imgSrc, twitter, linkedin } = teamMember;
+  const { name, title, imgSrc, instagram, linkedin } = teamMember;
 
- return (
-    <div className="card">
+  return (
+    <div className={classes.card}>
       <img src={imgSrc} alt={name} />
       <h3>{name}</h3>
       <p>{title}</p>
-      <ColoredLine color="purple"/>
-      <div className="card__social">
-        {twitter && (
-          <a href={twitter} target="_blank" rel="noreferrer">
-            <img src="src/assets/instagram.png" alt="Twitter" />
+      <ColoredLine color="purple" />
+      <div className={classes["card__social"]}>
+        {instagram && (
+          <a href={instagram} target="_blank" rel="noreferrer">
+            <img src="src/assets/instagram.png" alt="instagram" />
           </a>
         )}
         {linkedin && (
@@ -33,7 +33,7 @@ const Card = ({ teamMember }) => {
         )}
       </div>
     </div>
- );
+  );
 };
 
 export default Card;

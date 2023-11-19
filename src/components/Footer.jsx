@@ -89,7 +89,8 @@ const Footer = () => {
                   <TfiEmail className={classes.emailIcon} />
                 </span>
                 <span> d2cigniters@</span>
-                <p>vitbhopal.ac.in</p>
+                <br />
+                <span>vitbhopal.ac.in</span>
               </p>
               <p>
                 <span>
