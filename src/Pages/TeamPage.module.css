@@ -1,8 +1,33 @@
-
-.card-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 16px;
-    margin: 0 16px;
+.team-page {
+  background-color: #111;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
 }
 
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 16px;
+  margin: 0 16px;
+  overflow: hidden;
+}
+
+/* Responsive layout adjustments */
+@media (max-width: 1200px) {
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}

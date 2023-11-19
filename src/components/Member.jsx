@@ -2,17 +2,19 @@ import React from "react";
 import classes from "./Member.module.css";
 import { FaInstagram, FaLinkedin } from "react-icons/fa";
 
-function Member(props) {
+function Member({ teamMember }) {
+  const { name, title, imgSrc, instagram, linkedin } = teamMember;
+
   return (
-    <div class={classes.card}>
-      <img class={classes.img} src={props.src} />
-      <h2 class={classes.name}>{props.name}</h2>
-      <h4 class={classes.post}>{props.post}</h4>
-      <div class={classes.social}>
-        <a href={props.insta}>
+    <div className={classes.card}>
+      <img className={classes.img} src={imgSrc} />
+      <h2 className={classes.name}>{name}</h2>
+      <h4 className={classes.post}>{title}</h4>
+      <div className={classes.social}>
+        <a href={instagram}>
           <FaInstagram className={classes["social-media-icons"]} />
         </a>
-        <a href={props.linkedIn}>
+        <a href={linkedin}>
           <FaLinkedin className={classes["social-media-icons"]} />
         </a>
       </div>
