@@ -1,8 +1,54 @@
 .team-page {
   background-color: #111;
-  height: 100vh;
+  height: 100%;
   width: 100%;
-  overflow: hidden;
+  position: relative;
+  z-index: 10;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 3em;
+}
+
+.sub-options {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 15px;
+  margin: 0 auto;
+  margin-bottom: 2em;
+  word-spacing: 0.7em;
+}
+
+.sub-options li {
+  width: min-content;
+  vertical-align: middle;
+  max-width: 100%;
+  text-align: center;
+}
+
+.sub-options li a {
+  text-decoration: none;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0.5em;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  display: block;
+  min-width: 100px;
+  margin-bottom: -20px;
+}
+
+.sub-options li a:hover {
+  /* background-color: #172554; */
+  background-color: #4984c4;
+}
+
+.active {
+  /* background-color: #172554; */
+  background-color: #4984c4;
 }
 
 .card-grid {
@@ -10,7 +56,7 @@
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 16px;
   margin: 0 16px;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 /* Responsive layout adjustments */
@@ -18,16 +64,31 @@
   .card-grid {
     grid-template-columns: repeat(3, 1fr);
   }
+  .sub-options {
+    grid-template-columns: repeat(6, 1fr);
+  }
 }
 
 @media (max-width: 900px) {
   .card-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  .sub-options {
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
 
 @media (max-width: 800px) {
   .card-grid {
     grid-template-columns: 1fr;
+  }
+  .sub-options {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .sub-options {
+    grid-template-columns: repeat(3, 1fr);
   }
 }

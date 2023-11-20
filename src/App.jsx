@@ -5,10 +5,9 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./Pages/Homepage";
 import About from "./Pages/AboutPage";
-import Contact from "./Pages/ContactPage";
+import Blogs from "./Pages/BlogsPage";
 import Team from "./Pages/TeamPage";
 import "./App.css";
-
 
 const App = () => {
   return (
@@ -16,9 +15,9 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/teams/*" element={<Team />} />
+        <Route path="/blogs" element={<Blogs />} />
         <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/teams" element={<Team />} />
       </Routes>
       <Footer />
     </Router>

@@ -11,10 +11,10 @@ function Member({ teamMember }) {
       <h2 className={classes.name}>{name}</h2>
       <h4 className={classes.post}>{title}</h4>
       <div className={classes.social}>
-        <a href={instagram}>
+        <a href={instagram} target="_blank">
           <FaInstagram className={classes["social-media-icons"]} />
         </a>
-        <a href={linkedin}>
+        <a href={linkedin} target="_blank">
           <FaLinkedin className={classes["social-media-icons"]} />
         </a>
       </div>
