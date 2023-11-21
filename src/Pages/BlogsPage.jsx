@@ -1,18 +1,25 @@
 // Blogs.js
 import React from "react";
+import classes from "./BlogsPage.module.css";
+import blogs from "../blog-data";
 
 const Blogs = () => {
+  const sortedBlogs = blogs.slice().sort((a, b) => b.date - a.date);
+
   return (
-    <div>
-      <div
-        className="sk-ww-medium-publication-feed"
-        data-embed-id="229233"
-      ></div>
-      <script
-        src="https://widgets.sociablekit.com/medium-publication-feed/widget.js"
-        async
-        defer
-      ></script>
+    <div className={classes["blogs-page"]}>
+      <h1>Blogs</h1>
+      <div className={classes["blogs-grid"]}>
+        {sortedBlogs.map((blog) => (
+          <iframe
+            key={blog.id}
+            src={blog.url}
+            frameBorder="0"
+            width="100%"
+            height="1000"
+          ></iframe>
+        ))}
+      </div>
     </div>
   );
 };

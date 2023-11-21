@@ -214,7 +214,7 @@ const teamMembers = [
     title: "Advisor",
     instagram: "https://www.instagram.com/gourangagrawal_/",
     linkedin: "https://www.linkedin.com/in/gourang-agrawal/",
-    imgSrc: "#",
+    imgSrc: "https://i.ibb.co/WDtdRy0/GOURANG-jpeg.jpg",
   },
   {
     id: 24,

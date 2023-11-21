@@ -9,7 +9,7 @@ const Team = () => {
   const [searchParams, setSearchParams] = useSearchParams();
 
   const teamFilter = searchParams.get("team");
-  console.log(teamFilter);
+  // console.log(teamFilter);
 
   const managementMembers = teamData.filter((team) => team.team == "other");
 
