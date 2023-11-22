@@ -63,7 +63,7 @@ const teamMembers = [
     title: "Core Member",
     instagram: "https://www.instagram.com/Sawari_jamgaonkar/",
     linkedin: "www.linkedin.com/in/sawari-jamgaonkar-293399250",
-    imgSrc: "https://i.ibb.co/nw4PgZD/SAWARI-JAMGAONKAR.jpg",
+    imgSrc: "https://i.ibb.co/t2V7JqM/SAWARI-JAMGAONKAR.jpg",
   },
   {
     id: 8,
@@ -391,7 +391,7 @@ const teamMembers = [
     instagram: "https://www.instagram.com/beeriyal/",
     linkedin:
       "https://www.linkedin.com/in/riya-verma-41558724b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-    imgSrc: "https://i.ibb.co/wdKN8hn/RIYA.jpg",
+    imgSrc: "https://i.ibb.co/wRRWtCx/RIYA.jpg",
   },
   {
     id: 42,

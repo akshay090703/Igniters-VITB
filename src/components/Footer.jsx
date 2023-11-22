@@ -92,12 +92,12 @@ const Footer = () => {
                 <br />
                 <span>vitbhopal.ac.in</span>
               </p>
-              <p>
+              {/* <p>
                 <span>
                   <FaPhone />
                 </span>
                 <span> XXXXXXXXXX</span>
-              </p>
+              </p> */}
             </div>
           </div>
         </div>

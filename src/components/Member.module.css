@@ -7,10 +7,11 @@
   display: flex;
   flex-flow: column;
   margin: 20px 10px;
-  background-color: #787878;
+  background-color: #16191e;
+  /* background-color: #787878; */
   padding: 20px 10px;
   border-radius: 20px;
-  box-shadow: #4984c4 10px 30px 40px -10px;
+  /* box-shadow: #4984c4 10px 30px 40px -10px; */
   /* box-shadow: #e91e63 10px 30px 40px -10px; */
 }
 
@@ -29,7 +30,8 @@
   font-size: 1.75em;
   font-weight: 500;
   text-align: center;
-  color: #000000;
+  color: #fff;
+  /* color: #000000; */
 }
 
 .post {
@@ -47,7 +49,8 @@
 
 .social-media-icons {
   font-size: 2em;
-  color: #000000;
+  color: #4984c4;
+  /* color: #000000; */
   margin: 0 10px 10px 0;
   transition: all 0.5s ease;
 }
