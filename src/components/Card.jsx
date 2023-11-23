@@ -1,39 +1,29 @@
 import React from "react";
 import classes from "./Card.module.css";
+import { FaInstagram, FaLinkedin } from "react-icons/fa";
 
-const ColoredLine = ({ color }) => (
-  <hr
-    style={{
-      color: color,
-      marginTop: 10,
-      backgroundColor: color,
-      height: 5,
-    }}
-  />
-);
-const Card = ({ teamMember }) => {
+function Member({ teamMember }) {
   const { name, title, imgSrc, instagram, linkedin } = teamMember;
 
   return (
     <div className={classes.card}>
-      <img src={imgSrc} alt={name} />
-      <h3>{name}</h3>
-      <p>{title}</p>
-      <ColoredLine color="purple" />
-      <div className={classes["card__social"]}>
-        {instagram && (
-          <a href={instagram} target="_blank" rel="noreferrer">
-            <img src="src/assets/instagram.png" alt="instagram" />
+      <img className={classes.img} src={imgSrc} />
+      <h2 className={classes.name}>{name}</h2>
+      <h4 className={classes.post}>{title}</h4>
+      <div className={classes.social}>
+        {title === "Faculty Coordinator" ? (
+          ""
+        ) : (
+          <a href={instagram} target="_blank">
+            <FaInstagram className={classes["social-media-icons"]} />
           </a>
         )}
-        {linkedin && (
-          <a href={linkedin} target="_blank" rel="noreferrer">
-            <img src="src/assets/linkedin.svg" alt="LinkedIn" />
-          </a>
-        )}
+        <a href={linkedin} target="_blank">
+          <FaLinkedin className={classes["social-media-icons"]} />
+        </a>
       </div>
     </div>
   );
-};
+}
 
-export default Card;
+export default Member;

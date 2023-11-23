@@ -8,6 +8,7 @@ import About from "./Pages/AboutPage";
 import Blogs from "./Pages/BlogsPage";
 import Team from "./Pages/TeamPage";
 import "./App.css";
+import EventsPage from "./Pages/EventsPage";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/teams/*" element={<Team />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/about" element={<About />} />
+        <Route path="/events" element={<EventsPage />} />
       </Routes>
       <Footer />
     </Router>

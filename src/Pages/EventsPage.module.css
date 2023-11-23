@@ -1,0 +1,85 @@
+body {
+  background: #111;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+.timeline-card {
+  max-width: 100%;
+  padding: 0;
+  color: rgb(53, 53, 53);
+}
+
+.timeline-card iframe {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.timeline-card img {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.title {
+  font-size: 2.2em;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+h3 {
+  padding-top: 0.25em;
+  text-align: center;
+}
+
+.iconStyles {
+  background: #4984c4;
+  color: #111;
+  font-size: 2em;
+}
+
+.vertical-timeline-element-content {
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25),
+    0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
+  padding: 2em 3em !important;
+}
+
+.date {
+  color: rgb(201, 251, 255);
+}
+
+.description {
+  margin: 1.5em 0 2em 0;
+  max-width: 500px;
+}
+
+@media only screen and (max-width: 1165px) {
+  .vertical-timeline-element-date {
+    display: block !important;
+    float: none !important;
+    color: rgb(44, 44, 44);
+    margin-top: 1.5em;
+  }
+
+  .date {
+    /* color: #111; */
+    color: #4984c4;
+    font-weight: 900;
+    /* color: rgb(53, 53, 53); */
+  }
+
+  .timeline-card {
+    width: 95%;
+  }
+
+  .title {
+    font-size: 1.7em;
+    text-align: left;
+    margin-top: 1em;
+    margin-left: 0.3em;
+  }
+  .description {
+    max-width: 100%;
+  }
+}

@@ -1,8 +1,7 @@
 import React from "react";
-import Card from "../components/Card";
 import classes from "./TeamPage.module.css";
-import Member from "../components/Member";
-import { NavLink, useLocation, useSearchParams } from "react-router-dom";
+import Card from "../components/Card";
+import { NavLink, useSearchParams } from "react-router-dom";
 import teamData from "../teamData";
 
 const Team = () => {
@@ -86,8 +85,7 @@ const Team = () => {
       </div>
       <div className={classes["card-grid"]}>
         {teamMembers.map((member, index) => (
-          // <Card key={index} teamMember={member} />
-          <Member key={index} teamMember={member} />
+          <Card key={index} teamMember={member} />
         ))}
       </div>
     </div>
