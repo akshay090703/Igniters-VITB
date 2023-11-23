@@ -32,13 +32,13 @@ const blogs = [
   {
     id: 7,
     url: "https://widgets.sociablekit.com/medium-publication-feed/iframe/229990",
+    date: new Date("2023-11-22"),
+  },
+  {
+    id: 8,
+    url: "https://widgets.sociablekit.com/medium-publication-feed/iframe/229362",
     date: new Date("2023-11-21"),
   },
-  // {
-  //   id: 8,
-  //   url: "https://widgets.sociablekit.com/medium-publication-feed/iframe/229990",
-  //   date: new Date("2023-11-21"),
-  // },
 ];
 
 export default blogs;
