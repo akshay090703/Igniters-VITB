@@ -3,6 +3,7 @@ import { MdOutlineEventNote } from "react-icons/md";
 import { LuListStart } from "react-icons/lu";
 
 import eventsTimeline from "../events-data";
+import CarouselComponent from "../components/EventsCarousel";
 
 import {
   VerticalTimeline,
@@ -29,6 +30,7 @@ function EventsPage() {
               iconClassName={classes.iconStyles}
               icon={<MdOutlineEventNote />}
               className={classes["timeline-card"]}
+              textClassName={classes.card}
             >
               {element.youtubeLink ? (
                 <iframe
@@ -41,7 +43,7 @@ function EventsPage() {
                   allowFullScreen
                 ></iframe>
               ) : (
-                <img src={element.imgSrc} alt={element.title} />
+                <CarouselComponent propitems={element.imgSrc} />
               )}
               <h3 className={classes["vertical-timeline-element-title"]}>
                 {element.title}
