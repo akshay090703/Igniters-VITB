@@ -3,9 +3,15 @@ import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 import { sliderData } from "../slider-data";
 import classes from "./Slider-Banner.module.css";
 import { Link } from "react-router-dom";
+import { ScaleLoader } from "react-spinners";
 
 const Slider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [loading, setLoading] = useState(true);
+
+  const imgLoaded = () => {
+    setLoading(false);
+  };
 
   const slideLength = sliderData.length;
 
@@ -60,7 +66,19 @@ const Slider = () => {
           >
             {index === currentSlide && (
               <div className={classes.overlay}>
-                <img src={slide.image} alt="slide" className={classes.image} />
+                {loading && (
+                  <ScaleLoader
+                    color="#4984c4"
+                    height="4em"
+                    style={{ textAlign: "center", marginTop: "3em" }}
+                  />
+                )}
+                <img
+                  src={slide.imgSrc}
+                  alt="slide"
+                  className={classes.image}
+                  onLoad={imgLoaded}
+                />
                 <div className={`${classes.content}`}>
                   <h2 style={{ textAlign: "center", fontSize: "1.8em" }}>
                     Igniters
