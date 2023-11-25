@@ -15,15 +15,13 @@ function Member({ teamMember }) {
 
   return (
     <div className={classes.card}>
-      <div className={classes["img-container"]}>
-        {loading && <ScaleLoader color="#4984c4" height="2.5em" />}
-        <img
-          src={imgSrc}
-          alt="slide"
-          className={`${classes.img} ${loading ? classes.hidden : ""}`}
-          onLoad={imgLoaded}
-        />
-      </div>
+      {loading && <ScaleLoader color="#4984c4" height="2.5em" />}
+      <img
+        src={imgSrc}
+        alt="slide"
+        className={`${classes.img} ${loading ? classes.hidden : ""}`}
+        onLoad={imgLoaded}
+      />
       <h2 className={classes.name}>{name}</h2>
       <h4 className={classes.post}>{title}</h4>
       <div className={classes.social}>
