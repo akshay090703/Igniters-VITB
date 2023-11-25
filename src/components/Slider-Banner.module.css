@@ -76,12 +76,13 @@
 }
 
 .--btn:hover {
-  transform: translateY(-2px);
+  transform: translateY(-4px);
 }
 
 .--btn-primary {
   color: #fff;
   background: #e91e63;
+  font-size: 1.3em;
 }
 
 @keyframes slide-up {
