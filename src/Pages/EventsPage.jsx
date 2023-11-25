@@ -1,6 +1,6 @@
 import classes from "./EventsPage.module.css";
 import { MdOutlineEventNote } from "react-icons/md";
-import { LuListStart } from "react-icons/lu";
+import { BsFillSkipStartFill } from "react-icons/bs";
 
 import eventsTimeline from "../events-data";
 import CarouselComponent from "../components/EventsCarousel";
@@ -18,7 +18,7 @@ function EventsPage() {
     .sort((a, b) => b.dateStr - a.dateStr);
 
   return (
-    <div>
+    <div className={classes.eventsBody}>
       <h1 className={classes.title}>Our Journey</h1>
       <VerticalTimeline>
         {sortedEvents.map((element) => {
@@ -27,8 +27,18 @@ function EventsPage() {
               key={element.id}
               date={element.date}
               dateClassName={classes.date}
-              iconClassName={classes.iconStyles}
-              icon={<MdOutlineEventNote />}
+              iconClassName={
+                element.title != "Club Inauguration"
+                  ? classes.iconStyles
+                  : classes.inaugurationStyles
+              }
+              icon={
+                element.title != "Club Inauguration" ? (
+                  <MdOutlineEventNote />
+                ) : (
+                  <BsFillSkipStartFill />
+                )
+              }
               className={classes["timeline-card"]}
               textClassName={classes.card}
             >

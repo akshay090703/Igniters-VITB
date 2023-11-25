@@ -1,0 +1,4 @@
+.slider-container {
+  min-height: 80vh; /* Set a minimum height to ensure the container takes up at least the full viewport height */
+  position: relative;
+}
