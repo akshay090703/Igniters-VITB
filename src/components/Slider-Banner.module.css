@@ -5,6 +5,15 @@
   overflow: hidden;
 }
 
+.loader {
+  color: #4984c4;
+  height: 2.5em;
+  display: block;
+  text-align: center;
+  position: relative;
+  margin-top: 5em;
+}
+
 .slide {
   position: relative;
   width: 100%;

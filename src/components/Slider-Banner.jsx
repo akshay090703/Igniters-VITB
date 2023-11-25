@@ -70,7 +70,7 @@ const Slider = () => {
                   <ScaleLoader
                     color="#4984c4"
                     height="4em"
-                    style={{ textAlign: "center", marginTop: "3em" }}
+                    className={classes.loader}
                   />
                 )}
                 <img
