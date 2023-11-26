@@ -1,7 +1,7 @@
 const blogs = [
   {
     id: 1,
-    url: "https://widgets.sociablekit.com/medium-publication-feed/iframe/229358",
+    url: "https://widgets.sociablekit.com/medium-publication-feed/iframe/232014",
     date: new Date("2023-11-21"),
   },
   {
