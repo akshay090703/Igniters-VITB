@@ -1,4 +1,5 @@
 export const sliderData = [
+  { imgSrc: "https://i.ibb.co/0mw8RWh/slider-0.jpg" },
   { imgSrc: "https://i.ibb.co/4MXnH97/slider-1.jpg" },
   { imgSrc: "https://i.ibb.co/vXnFsj5/slider-2.jpg" },
   { imgSrc: "https://i.ibb.co/p2bFYDz/slider-3.jpg" },
