@@ -16,6 +16,7 @@ const Item = ({ item }) => {
           overflow: "hidden",
           borderRadius: "6px",
           backgroundRepeat: "no-repeat",
+          filter: "brightness(75%)",
         }}
       >
         <div className={`${classes.content}`}>

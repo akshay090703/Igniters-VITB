@@ -13,6 +13,10 @@
   margin-bottom: 3em;
 }
 
+li {
+  list-style: none;
+}
+
 .sub-options {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
