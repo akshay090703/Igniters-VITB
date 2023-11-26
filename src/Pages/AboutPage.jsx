@@ -13,9 +13,10 @@ const About = () => {
         <div>
           <h2>About Us</h2>
           <p>
-            Igniters Club which is powered by Unstop (Formerly Dare2Compete) was
-            started in 2021 with the vision of bringing together diverse minds,
-            giving them a way to learn new things and boost their confidence.
+            Igniters Club which was formerly powered by Unstop (Formerly
+            Dare2Compete) was started in 2021 with the vision of bringing
+            together diverse minds, giving them a way to learn new things and
+            boost their confidence.
           </p>
           <p>
             {" "}

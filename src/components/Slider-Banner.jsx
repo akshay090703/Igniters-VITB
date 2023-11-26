@@ -4,6 +4,8 @@ import { sliderData } from "../slider-data";
 import classes from "./Slider-Banner.module.css";
 import { Link } from "react-router-dom";
 import { ScaleLoader } from "react-spinners";
+import Carousel from "react-material-ui-carousel";
+import Item from "./sliderItem";
 
 const Slider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -13,97 +15,33 @@ const Slider = () => {
     setLoading(false);
   };
 
-  const slideLength = sliderData.length;
-
-  const autoScroll = true;
-  let slideInterval;
-  let intervalTime = 5000;
-
-  const nextSlide = () => {
-    setCurrentSlide(currentSlide === slideLength - 1 ? 0 : currentSlide + 1);
-    console.log("next");
-  };
-
-  const prevSlide = () => {
-    setCurrentSlide(currentSlide === 0 ? slideLength - 1 : currentSlide - 1);
-    console.log("prev");
-  };
-
-  function auto() {
-    slideInterval = setInterval(nextSlide, intervalTime);
-  }
-
-  useEffect(() => {
-    setCurrentSlide(0);
-  }, []);
-
-  useEffect(() => {
-    if (autoScroll) {
-      auto();
-    }
-    return () => clearInterval(slideInterval);
-  }, [currentSlide]);
-
   return (
     <div className="slider">
-      <AiOutlineArrowLeft
-        className={`${classes.arrow} ${classes.prev}`}
-        onClick={prevSlide}
-      />
-      <AiOutlineArrowRight
-        className={`${classes.arrow} ${classes.next}`}
-        onClick={nextSlide}
-      />
-      {sliderData.map((slide, index) => {
-        return (
-          <div
-            className={
-              index === currentSlide
-                ? `${classes.slide} ${classes.current}`
-                : `${classes.slide}`
-            }
-            key={index}
-          >
-            {index === currentSlide && (
-              <div className={classes.overlay}>
-                {loading && (
-                  <ScaleLoader
-                    color="#4984c4"
-                    height="4em"
-                    className={classes.loader}
-                  />
-                )}
-                <img
-                  src={slide.imgSrc}
-                  alt="slide"
-                  className={classes.image}
-                  onLoad={imgLoaded}
-                />
-                <div className={`${classes.content}`}>
-                  <h2 style={{ textAlign: "center", fontSize: "1.8em" }}>
-                    Igniters
-                  </h2>
-                  <p>
-                    We are the "Igniters" of VIT Bhopal. We gamify interactions
-                    and interventions for enhancing & democratizing learning and
-                    hiring. Known for turning ordinary days into extraordinary
-                    tech fiestas, Igniters is the go-to crew for all things
-                    geeky and fun.
-                  </p>
-                  <hr />
-                  <Link to="/events">
-                    <button
-                      className={`${classes["--btn"]} ${classes["--btn-primary"]}`}
-                    >
-                      All Events
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            )}
-          </div>
-        );
-      })}
+      <Carousel
+        className={classes["carousel-container"]}
+        interval={4000}
+        animation="fade"
+        duration={800}
+        NextIcon={<AiOutlineArrowRight className={classes.arrow} />}
+        PrevIcon={<AiOutlineArrowLeft className={classes.arrow} />}
+        navButtonsAlwaysVisible
+        indicatorContainerProps={{
+          style: { display: "none" },
+        }}
+        navButtonsProps={{
+          style: { backgroundColor: "transparent" },
+        }}
+        navButtonsWrapperProps={{
+          style: {
+            margin: "0 1em",
+          },
+        }}
+        stopAutoPlayOnHover={false}
+      >
+        {sliderData.map((slide, index) => (
+          <Item key={index} item={slide.imgSrc} />
+        ))}
+      </Carousel>
     </div>
   );
 };

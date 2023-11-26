@@ -1,0 +1,94 @@
+.content {
+  position: absolute;
+  top: 23rem;
+  left: 5rem;
+  opacity: 1;
+  max-width: 80%;
+  max-width: 600px;
+
+  color: #fff;
+  padding: 3rem;
+  background: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Darken the background for better visibility */
+  animation: slide-up 1s ease 0.5s;
+  animation-fill-mode: forwards;
+  visibility: visible;
+}
+
+.content a {
+  text-decoration: none;
+}
+
+.--btn {
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding: 6px 8px;
+  margin: 0 5px 0 0;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in;
+}
+
+.--btn:hover {
+  transform: scale(1.15);
+}
+
+.--btn-primary {
+  color: #fff;
+  background: #e91e63;
+  font-size: 1.3em;
+}
+
+@keyframes slide-up {
+  0% {
+    visibility: visible;
+    top: 23rem;
+  }
+  100% {
+    visibility: visible;
+    top: 17rem;
+  }
+}
+
+.content {
+  width: 80%;
+}
+
+.content > * {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1100px) {
+  .content {
+    width: 60%;
+    top: 8rem;
+    font-size: 1em;
+    max-width: none;
+    padding: 1rem;
+  }
+
+  .--btn {
+    font-size: 1em;
+    max-height: fit-content;
+  }
+
+  @keyframes slide-up {
+    0% {
+      visibility: visible;
+      top: 7rem;
+    }
+    100% {
+      visibility: visible;
+      top: 2rem;
+    }
+  }
+}
