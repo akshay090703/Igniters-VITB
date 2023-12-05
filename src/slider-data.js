@@ -1,13 +1,34 @@
 export const sliderData = [
-  { imgSrc: "https://i.ibb.co/0mw8RWh/slider-0.jpg" },
-  { imgSrc: "https://i.ibb.co/4MXnH97/slider-1.jpg" },
-  { imgSrc: "https://i.ibb.co/vXnFsj5/slider-2.jpg" },
-  { imgSrc: "https://i.ibb.co/p2bFYDz/slider-3.jpg" },
-  { imgSrc: "https://i.ibb.co/k9L6M0X/slider-4.jpg" },
-  { imgSrc: "https://i.ibb.co/zbWcDB2/slider-5.jpg" },
-  { imgSrc: "https://i.ibb.co/7bK7nfd/slider-6.jpg" },
-  { imgSrc: "https://i.ibb.co/swbSn3M/slider-7.jpg" },
-  // {
-  //   image: "../../public/hero_pics/slider-1.jpg",
-  // },
+  {
+    imgSrc:
+      "https://icecube-eu-405.icedrive.io/download?p=nwqSVjaxB52Ae3f_TBZBVrj6HGOylDhUEI3SDKxpWgMN6MW9v6XKJdq5rk4.EVTIBQFCvigKNwSA_6B2fSKNQiBwpKyfnBgzu9hwwhDuq_qw1kYFfAfncHptQ3RTcyQepfEZ1kvCTjZPuAibjRU1twD8F1vRinnKXTrF1MTOhDHm9pfTzXqRRKmtc13tindieG1yl5QhfxKCuWmXGzJUxg--",
+  },
+  {
+    imgSrc:
+      "https://ice-eu-53814.icedrive.io/thumbnail?p=7uWZZsjTJ71ldrcifpizj8PSTcWDfotTL8S9PSUbCwwbCwR3f1J0mHAdXOcVdsfBOvyR8USVNiOgGtPhaOmNxyDlyLGz8uHpUKktTHrYuxBW5vNvCcpi4KLTxaTjTHZFqpZcyU0JY5XQBgF03w_KrQ--&w=1024&h=1024&m=cropped",
+  },
+  {
+    imgSrc:
+      "https://ice-eu-53814.icedrive.io/thumbnail?p=R8Wo7dXD.ziQjtEXurlac5oK4xeW.Qum9DW3CzVYrPmDS3LKpLYn585oRqJ4hF2QMGKMSmJr60dC9K9n_2djsyDlyLGz8uHpUKktTHrYuxBW5vNvCcpi4KLTxaTjTHZFqpZcyU0JY5XQBgF03w_KrQ--&w=1024&h=1024&m=cropped",
+  },
+  {
+    imgSrc:
+      "https://ice-eu-53814.icedrive.io/thumbnail?p=R8Wo7dXD.ziQjtEXurlacyP8SYCvFLhY_2ynuenfyVk4o7bNnd_Sy3bFMLiioeYSZXE.oq5JQxUJ997dTpBWMyDlyLGz8uHpUKktTHrYuxBW5vNvCcpi4KLTxaTjTHZFqpZcyU0JY5XQBgF03w_KrQ--&w=1024&h=1024&m=cropped",
+  },
+  {
+    imgSrc:
+      "https://ice-eu-53814.icedrive.io/thumbnail?p=Vd4m.SUAdPtDc0mJ1v1umbSjcxAzbHlqvZpXNer0.c.sDgnAQBo4ZzOrWDEif481WM1qi36xp5ZRRoe1CHOQ6SDlyLGz8uHpUKktTHrYuxBW5vNvCcpi4KLTxaTjTHZFqpZcyU0JY5XQBgF03w_KrQ--&w=1024&h=1024&m=cropped",
+  },
+  {
+    imgSrc:
+      "https://ice-eu-53814.icedrive.io/thumbnail?p=Vd4m.SUAdPtDc0mJ1v1umTEyfnJDQp8mmKH2ADFA31BuWrGl44j.GXPe98CRgCYtIfWt39UwOT_uFkQ3L9CX9iDlyLGz8uHpUKktTHrYuxBW5vNvCcpi4KLTxaTjTHZFqpZcyU0JY5XQBgF03w_KrQ--&w=1024&h=1024&m=cropped",
+  },
+  {
+    imgSrc:
+      "https://ice-eu-53814.icedrive.io/thumbnail?p=U4zGeol5Wx0fzjE5T6zW2gH07Ri64YszQCgiu5QM8QkeBkk35OaGntXEaJgdaibIZJsP6RCMcFlIehQ_OGxkfCDlyLGz8uHpUKktTHrYuxBW5vNvCcpi4KLTxaTjTHZFqpZcyU0JY5XQBgF03w_KrQ--&w=1024&h=1024&m=cropped",
+  },
+  {
+    imgSrc:
+      "https://ice-eu-53814.icedrive.io/thumbnail?p=bDQGwKoOm7HMWn25GQSsUsSa0Z8Wy5w4Y.qERhsUU7zACQIMLQskOBt2OBdwY4i1nxOTt8kxUurmWRoZKP6tMiDlyLGz8uHpUKktTHrYuxBW5vNvCcpi4KLTxaTjTHZFqpZcyU0JY5XQBgF03w_KrQ--&w=1024&h=1024&m=cropped",
+  },
 ];
