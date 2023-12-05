@@ -74,7 +74,7 @@ const teamMembers = [
   },
   {
     id: 8,
-    name: "Tanishk Jain",
+    name: "Tanishq Jain",
     team: "technical",
     title: "Core Member",
     instagram: "https://www.instagram.com/tanishq0_0/",
