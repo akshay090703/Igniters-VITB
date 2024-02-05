@@ -19,7 +19,7 @@ function Member({ teamMember }) {
       <img
         src={imgSrc}
         alt="slide"
-        className={`${classes.img} ${loading ? classes.hidden : ""}`}
+        className={`${classes.img} ${loading ? classes.hidden : null}`}
         onLoad={imgLoaded}
       />
       <h2 className={classes.name}>{name}</h2>
