@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./blogCard.module.css";
+import classes from "./BlogCard.module.css";
 
 const BlogCard = ({ blog }) => {
   const monthNames = [
