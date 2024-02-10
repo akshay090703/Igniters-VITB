@@ -2,7 +2,7 @@
 import React from "react";
 import classes from "./BlogsPage.module.css";
 import blogs from "../blog-data";
-import BlogCard from "../components/blogCard";
+import BlogCard from "../components/BlogCard";
 
 const Blogs = () => {
   const sortedBlogs = blogs.slice().sort((a, b) => b.date - a.date);
